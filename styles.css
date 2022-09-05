@@ -5,9 +5,9 @@
 }
 
 h1 {
+    position: absolute;
+    left: 38%;
     color: white;
-    margin: auto;
-    text-align: center;
 }
 
 body {
@@ -19,7 +19,9 @@ body {
 } 
 
 #calc {
-    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    right: 35%;
     padding: 0;
     width: 400px;
     padding: 0.5em;
