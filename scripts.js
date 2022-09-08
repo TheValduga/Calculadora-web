@@ -1,14 +1,20 @@
 const previousDisplay = document.getElementById("previous")
 const currentDisplay = document.getElementById("current")
-const buttons = querySelector("#buttons button")
+// const buttons = {...document.getElementsByTagName("button")}
+const buttons = document.querySelectorAll("#buttons_container button")
+console.log(buttons);
 
 class calculator {
 
 }
 
 buttons.forEach((btn) => {
-   btn.addEventListener("click",(e) => {
-    const value = e.target.innerText;
-    if (+value >= 0 || value === ',')
+   btn.addEventListener("click",(event) => {
+   const value = event.target.innerText;
+   console.log(value);
+   /*if (+value >= 0 || value === ',') {
+
+   }*/
    }) 
+   
 })

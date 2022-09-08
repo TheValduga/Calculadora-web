@@ -5,30 +5,21 @@
 }
 
 h1 {
-    position: absolute;
-    left: 38%;
     color: white;
 }
 
 body {
-    background-color: #333;
     display: flex;
+    flex-direction: column;
+    background-color: #333;
     align-items: center;
-    justify-items: center;
-    padding: 3em;
 } 
 
 #calc {
-    position: absolute;
-    top: 20%;
-    right: 35%;
-    padding: 0;
     width: 400px;
-    padding: 0.5em;
     background-color: #c4c4c4;
     color: black;
-    display: flex;
-    flex-direction: column;
+    margin-top: 130px;
 }
 
 #calc h3 {
@@ -55,7 +46,7 @@ body {
     font-weight: 700;
 }
 
-#buttons {
+#buttons_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3px;
@@ -70,21 +61,21 @@ button {
     cursor: pointer;
 }
 
-#buttons .number {
+#buttons_container .number {
     background-color: #f3f3f3;
 }
 
-#buttons :hover {
+#buttons_container :hover {
     background-color: #bababa;
     border-color: #999;
 }
 
-#buttons #equal {
+#buttons_container #equal {
     grid-column: span 2;
     background-color: #75a5cb; 
 }
 
-#buttons #equal:hover {
+#buttons_container #equal:hover {
     
     background-color: #3a91d8; 
 }
